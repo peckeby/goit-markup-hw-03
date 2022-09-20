@@ -367,7 +367,8 @@ address {
   text-decoration: none;
 }
 
-.logo-footer .footer-contact:hover,
+.logo-footer,
+.footer-contact:hover,
 .footer-contact:focus,
 .logo-footer:visited {
   color: var(--blue-color);
