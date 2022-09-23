@@ -42,8 +42,15 @@ ul {
 
 li,
 p,
-h2 {
+h2,
+h3 {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -223,7 +230,7 @@ header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .what-we-do-section {
@@ -261,28 +268,32 @@ header {
 }
 
 .team-info,
-.team-card > h3 {
+.team-name {
   font-size: 16px;
   line-height: 1.1875;
   align-self: flex-end;
 }
 
-.team-card > h3 {
+.team-card-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-name {
   font-weight: 500;
-  margin-top: 30px;
   margin-bottom: 5px;
 }
 
 .team-info {
   color: var(--text-gray-color);
   margin-top: 5px;
-  margin-bottom: 30px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
+  padding-bottom: 0;
 }
 
 .filter {
@@ -309,12 +320,12 @@ header {
 }
 
 .projects {
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  padding-bottom: 0px;
+  padding-top: 0;
 }
 
 .project {
@@ -329,23 +340,25 @@ header {
   padding: 20px 23px;
 }
 
-.project-info > h2 {
+.project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 2px;
+  margin-bottom: 2px;
 }
 
-.project.info > p {
+.project-type {
   font-size: 16px;
   color: var(--text-gray-color);
   line-height: 1.875;
-  padding-top: 2px;
+  margin-top: 2px;
 }
 
 footer {
   background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -357,16 +370,11 @@ address {
   color: var(--main-color);
   font-style: normal;
   line-height: 1.8;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .footer-item {
   margin-bottom: 9px;
-}
-
-.footer-info {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-contact,
