@@ -18,32 +18,27 @@ body {
   font-size: 14px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: block;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-ul {
-  list-style-type: none;
+.list {
+  list-style: none;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-inline-start: 0px;
+  padding-left: 0;
 }
 
+.link {
+  text-decoration: none;
+}
+
+h1,
 li,
 p,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -51,6 +46,21 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 header {
@@ -77,6 +87,10 @@ header {
   border-bottom: 1px solid var(--border-menu-navigation);
 }
 
+.nav-list {
+  margin-left: 93px;
+}
+
 .link-nav-list {
   display: inline-flex;
   align-items: center;
@@ -90,7 +104,6 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 50px;
-  padding: 0px;
   margin-left: auto;
 }
 
@@ -100,7 +113,6 @@ header {
   font-size: 26px;
   line-height: 1.2;
   color: var(--logo-studio-color);
-  text-decoration: none;
 }
 
 .logo-web {
@@ -112,12 +124,10 @@ header {
 .site-nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .link-contact {
   color: var(--text-gray-color);
-  text-decoration: none;
 }
 
 .link-nav {
@@ -157,7 +167,8 @@ header {
   color: var(--main-color);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-top: 0px;
+  margin: 0 auto;
+  width: 696px;
   margin-bottom: 30px;
 }
 
@@ -207,10 +218,6 @@ header {
 
 .features {
   display: flex;
-  align-content: center;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
 }
 
 .features-item:not(:last-child) {
@@ -234,30 +241,22 @@ header {
 }
 
 .what-we-do-section {
-  display: flex;
-  flex-direction: column;
   padding-top: 0;
 }
 
 .img-what-we-do {
   display: inline-flex;
-  justify-content: space-between;
-  column-gap: 10px;
+  column-gap: 30px;
 }
 
 .team-cards-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .team-card {
-  display: block-flex;
   text-align: center;
-  column-gap: 10px;
   background-color: var(--main-color);
-  justify-content: center;
-  align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -281,19 +280,17 @@ header {
 
 .team-name {
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .team-info {
   color: var(--text-gray-color);
-  margin-top: 5px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-bottom: 0;
 }
 
 .filter {
@@ -323,21 +320,14 @@ header {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 30px;
-  padding-top: 0;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
 }
 
 .project-info {
   border-left: 1px solid var(--border-project-card);
   border-right: 1px solid var(--border-project-card);
   border-bottom: 1px solid var(--border-project-card);
-  padding: 20px 23px;
+  padding: 20px 24px;
 }
 
 .project-name {
@@ -345,14 +335,13 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .project-type {
   font-size: 16px;
   color: var(--text-gray-color);
   line-height: 1.875;
-  margin-top: 2px;
 }
 
 footer {
@@ -377,17 +366,24 @@ address {
   margin-bottom: 9px;
 }
 
+.address-link {
+  color: var(--main-color);
+}
+
 .footer-contact,
 .footer-contact:visited {
   color: var(--main-color);
   opacity: 60%;
-  text-decoration: none;
 }
 
 .logo-footer,
 .footer-contact:hover,
 .footer-contact:focus,
-.logo-footer:visited {
+.logo-footer:visited,
+.address-link:hover,
+.address-link:focus,
+.address-link:visited:hover,
+.address-link:visited:focus {
   color: var(--blue-color);
   opacity: 100%;
 }
