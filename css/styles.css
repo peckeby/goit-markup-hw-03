@@ -102,7 +102,6 @@ header {
 
 .site-nav {
   display: inline-flex;
-  align-items: center;
   gap: 50px;
   margin-left: auto;
 }
